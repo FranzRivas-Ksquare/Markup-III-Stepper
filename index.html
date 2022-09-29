@@ -2,74 +2,110 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css">
         <title>Meal Preferences</title>
     </head>
     <body>
         <div id="steps">
             <div class="step">
-                <div>1</div>
+                <div class="number"><h4>1</h4></div>
                 <h3>Cabin</h3>
                 <div class="separator"></div>
             </div>
+            <div class="step">
+                <div class="number"><h4>2</h4></div>
+                <h3>Meals</h3>
+                <div class="separator"></div>
+            </div>
+            <div class="step">
+                <div class="number"><h4>3</h4></div>
+                <h3>Upgrades</h3>
+                <div class="separator"></div>
+            </div>
+            <div class="step">
+                <div class="number"><h4>4</h4></div>
+                <h3>Payments</h3>
+                <div class="separator"></div>
+            </div>
         </div>
-        <h1>Meal Preferences</h1>
-        <p>Yourflight comes with breakfast, lunch, and dinner.
-            Pleasemake your selections below.
-            Changes to your order can be made up to 48 hours before your flight.
-        </p>
+        <div class="info">
+            <h1>Meal Preferences</h1>
+            <p>Yourflight comes with breakfast, lunch, and dinner.
+                Pleasemake your selections below.
+                Changes to your order can be made up to 48 hours before your flight.
+            </p>
+        </div>
         <form id="meals">
             <div class="meal">
-                <label for="breakfast">Breakfast</label><br>
-                <select name="breakfast" id="breakfast">
-                    <option value="eggs">Eggs</option>
-                    <option value="sandwich">Sandwich</option>
-                    <option value="hotcake">Hotcake</option>
-                    <option value="tacows">Tacows</option>
-                </select>
-                <label for="morning">Drink</label><br>
-                <select name="morning" id="morning">
-                    <option value="juice">Juice</option>
-                    <option value="water">Water</option>
-                    <option value="coffee">Coffee</option>
-                    <option value="beer">Beer</option>
-                </select>
+                <div class="food">
+                    <label for="breakfast">Breakfast</label><br>
+                    <select name="breakfast" id="breakfast">
+                        <option value="eggs">Eggs</option>
+                        <option value="sandwich">Sandwich</option>
+                        <option value="hotcake">Hotcake</option>
+                        <option value="tacows">Tacows</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="morning">Drink</label><br>
+                    <select name="morning" id="morning">
+                        <option value="juice">Juice</option>
+                        <option value="water">Water</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="beer">Beer</option>
+                    </select>
+                </div>
             </div>
             <div class="meal">
-                <label for="lunch">Lunch</label><br>
-                <select name="lunch" id="lunch">
-                    <option value="pozole">Pozole</option>
-                    <option value="pib">Mukbil Chicken</option>
-                    <option value="hamburger">Hamburger</option>
-                    <option value="tacows">Tacows</option>
-                </select>
-                <label for="afternoon">Drink</label><br>
-                <select name="afternoon" id="afternoon">
-                    <option value="coke">Coke tail</option>
-                    <option value="water">Water</option>
-                    <option value="beer">Beer</option>
-                    <option value="+beer">More Beer</option>
-                </select>
+                <div class="food">
+                    <label for="lunch">Lunch</label><br>
+                    <select name="lunch" id="lunch">
+                        <option value="pozole">Pozole</option>
+                        <option value="pib">Mukbil Chicken</option>
+                        <option value="hamburger">Hamburger</option>
+                        <option value="tacows">Tacows</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="afternoon">Drink</label><br>
+                    <select name="afternoon" id="afternoon">
+                        <option value="coke">Coke tail</option>
+                        <option value="water">Water</option>
+                        <option value="beer">Beer</option>
+                        <option value="+beer">More Beer</option>
+                    </select>
+                </div>
             </div>
             <div class="meal">
-                <label for="dinner">Dinner</label><br>
-                <select name="dinner" id="dinner">
-                    <option value="sushi">sushi</option>
-                    <option value="pizza">Pizza</option>
-                    <option value="hamburger">Hamburger</option>
-                    <option value="tacows">Tacows</option>
-                </select>
-                <label for="night">Drink</label><br>
-                <select name="night" id="night">
-                    <option value="cocktail">Cocktail</option>
-                    <option value="wine">Wine</option>
-                    <option value="beer">Beer</option>
-                    <option value="whisky">whisky</option>
-                </select>
+                <div class="food">
+                    <label for="dinner">Dinner</label><br>
+                    <select name="dinner" id="dinner">
+                        <option value="sushi">Sushi</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="hamburger">Hamburger</option>
+                        <option value="tacows">Tacows</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="night">Drink</label><br>
+                    <select name="night" id="night">
+                        <option value="cocktail">Cocktail</option>
+                        <option value="wine">Wine</option>
+                        <option value="beer">Beer</option>
+                        <option value="whisky">whisky</option>
+                    </select>
+                </div>
             </div>
             <input type="checkbox" id="dessert" name="dessert" value="Dessert">
             <label for="dessert">I'd like dessert, too!</label><br>
-            <input type="submit" value="Submit">
+            <div id="buttons">
+                <button type="button">Back</button> 
+                <input type="submit" value="Continue">
+            </div>
+
         <form>
     </body>
 </html>
